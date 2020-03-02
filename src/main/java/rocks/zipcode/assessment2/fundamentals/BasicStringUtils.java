@@ -42,8 +42,9 @@ public class BasicStringUtils {
             reverse2 = reverse2 + string2.charAt(j);
         }
 
-        String output = reverse1 + reverse2;
+        String output = concatentate(reverse1, reverse2);
         return output;
+
     }
 
     /**
@@ -52,24 +53,31 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
+//        StringBuilder sb = new StringBuilder();
 //
-//        String[] arrOfString = string.split("");
-//        for (int i = 0; i<arrOfString.length; i++);
+//        char[] charsToRemove = charactersToRemove.toCharArray();
+//        char[] baseStringChars = string.toCharArray();
 //
-//        String[] arrOfCharacters = charactersToRemove.split("");
-//        for (int i = 0; i<arrOfCharacters.length; i++);
-//        if (arrOfCharacters[i] )
+//        for (int i = 0; i < charsToRemove.length; i++) {
+//            for (int j = 0; j < baseStringChars.length; j++) {
+//                if (baseStringChars[j] != charsToRemove[i]) {
+//                }
 //
+//                sb.append(baseStringChars[j]);
+//            }
 //
-   return null; }
 
+
+//        return sb.toString();
+return null;
+    }
         /**
          * @param string - the string to be manipulated
          * @param charactersToRemove - characters to be removed from the string
          * @return reverse of `string` with `charactersToRemove` removed
          */
         public static String removeCharactersThenReverse (String string, String charactersToRemove){
+
             return null;
         }
     }
-

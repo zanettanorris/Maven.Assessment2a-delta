@@ -36,15 +36,29 @@ public class StringUtils {
      * @return - true if string only contains alpha characters
      */
     public static Boolean isAlphaString(String string) {
-        return null;
+        char[] chars = string.toCharArray();
+
+        for (char c : chars) {
+            if (!Character.isLetter(c) && !Character.isSpaceChar(c)){
+                return false;
+        }
     }
+            return true;
+        }
 
     /**
      * @param string - string to be evaluated
      * @return - true if string only contains numeric characters
      */
     public static Boolean isNumericString(String string) {
-        return null;
+            char[] chars = string.toCharArray();
+
+            for (char c : chars) {
+                if (!Character.isDigit(c)) {
+                    return false;
+                }
+            }
+            return true;
     }
 
     /**
@@ -52,6 +66,13 @@ public class StringUtils {
      * @return - true if string only contains special characters
      */
     public static Boolean isSpecialCharacterString(String string) {
-        return null;
+        char[] chars = string.toCharArray();
+
+        for (char c : chars) {
+            if (Character.isLetterOrDigit(c)) {
+                return false;
+            }
+        }
+        return true;
     }
-}
+    }

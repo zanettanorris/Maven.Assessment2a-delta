@@ -53,24 +53,20 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
-//        StringBuilder sb = new StringBuilder();
-//
-//        char[] charsToRemove = charactersToRemove.toCharArray();
-//        char[] baseStringChars = string.toCharArray();
-//
-//        for (int i = 0; i < charsToRemove.length; i++) {
-//            for (int j = 0; j < baseStringChars.length; j++) {
-//                if (baseStringChars[j] != charsToRemove[i]) {
-//                }
-//
-//                sb.append(baseStringChars[j]);
-//            }
-//
+        StringBuilder sb = new StringBuilder();
 
+        char[] charsToRemove = charactersToRemove.toCharArray();
+        char[] baseStringChars = string.toCharArray();
 
-//        return sb.toString();
-return null;
-    }
+        for (int i = 0; i < charsToRemove.length; i++) {
+            for (int j = 0; j < baseStringChars.length; j++) {
+                if (baseStringChars[j] == charsToRemove[i]) {
+                }
+            }
+        }
+            return sb.toString();
+        }
+
         /**
          * @param string - the string to be manipulated
          * @param charactersToRemove - characters to be removed from the string

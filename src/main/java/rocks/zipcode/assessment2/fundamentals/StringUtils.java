@@ -10,8 +10,12 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by left-padding
      */
     public static String padLeft(String stringToBePadded, int amountOfPadding) {
-        String newString = StringUtils.padLeft(stringToBePadded, amountOfPadding);
-return newString;
+        StringBuilder temp = new StringBuilder();
+        for (int i= 0; i<amountOfPadding-stringToBePadded.length(); i++){
+        temp.append(" ");
+        }
+        temp.append(stringToBePadded);
+                return temp.toString();
     }
 
     /**
@@ -20,7 +24,12 @@ return newString;
      * @return `stringToBePadded` flushed right by right-padding
      */
     public static String padRight(String stringToBePadded, int amountOfPadding) {
-        return null;
+        StringBuilder temp = new StringBuilder();
+        temp.append(stringToBePadded);
+        for (int i= 0; i<amountOfPadding-stringToBePadded.length(); i++){
+            temp.append(" ");
+        }
+        return temp.toString();
     }
 
     /**

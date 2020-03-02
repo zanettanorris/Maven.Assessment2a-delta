@@ -59,12 +59,9 @@ public class BasicStringUtils {
         char[] baseStringChars = string.toCharArray();
 
         for (int i = 0; i < charsToRemove.length; i++) {
-            for (int j = 0; j < baseStringChars.length; j++) {
-                if (baseStringChars[j] == charsToRemove[i]) {
-                }
-            }
+            for (int j = 0; j<baseStringChars.length; j++);
         }
-            return sb.toString();
+        return null;
         }
 
         /**
